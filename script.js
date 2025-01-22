@@ -80,7 +80,7 @@ function hideElements() {
   // Attach the simulatePageChange function to the button
   document.getElementById('changeButton').onclick = simulatePageChange;
   
-  // Detect URL hash changes (e.g., when you simulate a page change)
+  // Detect URL hash changes
   window.addEventListener('hashchange', function() {
     console.log('Page hash changed:', window.location.hash);
     document.body.style.backgroundColor = '#282c34';
